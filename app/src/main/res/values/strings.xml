@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Harp</string>
+    <string name="enter_notes_here">Enter notes here</string>
+    <string name="go">GO</string>
+
+
+    <string name="dummy_button">CONVERT</string>
+    <string name="learn">LEARN</string>
+    <string name="play">PLAY</string><string name="about">ABOUT</string>
+    <string name="invite">INVITE</string>
+
+
+</resources>

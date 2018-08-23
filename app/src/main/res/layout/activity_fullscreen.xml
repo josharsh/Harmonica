@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <LinearLayout
+
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fullscreen_content"
+        android:orientation="vertical">
+
+    <GridLayout
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:paddingBottom="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        >
+        <LinearLayout android:orientation="vertical"
+            android:padding="25dp">
+            <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/music"
+            android:onClick="learn"
+            android:background="@null"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:paddingLeft="18dp"
+            android:layout_height="wrap_content"
+            android:text="@string/learn"
+            android:textColor="#F44336"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="Roboto"
+            /></LinearLayout>
+
+        <LinearLayout android:orientation="vertical"
+            android:padding="25dp">
+            <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play"
+            android:onClick="learn"
+            android:background="@null"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingLeft="18dp"
+                android:layout_height="wrap_content"
+                android:text="@string/play"
+                android:textColor="#2196F3"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:fontFamily="Roboto"
+                /></LinearLayout>
+
+        <LinearLayout android:orientation="vertical"
+            android:padding="25dp"><ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/about"
+            android:onClick="learn"
+            android:background="@null"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingLeft="18dp"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:textColor="#9C27B0"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:fontFamily="Roboto"
+                /></LinearLayout>
+
+        <LinearLayout android:orientation="vertical"
+            android:padding="25dp">
+            <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/invite"
+            android:onClick="sendInvite"
+            android:background="@null"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="@string/invite"
+                android:textColor="#FFEEA3"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:fontFamily="Roboto"
+                /></LinearLayout>
+
+    </GridLayout></LinearLayout>
+
+    <!--<TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/dummy_content"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />-->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/dummy_button"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dummy_button"
+                android:onClick="showMain"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
