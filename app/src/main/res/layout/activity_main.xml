@@ -31,28 +31,30 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:orientation="horizontal">
-      <Button
-      android:textColor="@color/BackgroundColor"
-          android:background="@color/colorPrimary"
-          android:layout_width="0dp"
-          android:layout_weight="1"
-          android:padding="8dp"
-          android:layout_margin="8dp"
-      android:layout_height="wrap_content"
-      android:text="@string/go"
-      android:onClick="goFunc"
-      android:id="@+id/gobtn"/>
-      <Button
-          android:layout_margin="8dp"
-          android:layout_width="0dp"
-          android:layout_weight="1"
-          android:layout_height="wrap_content"
-          android:text="Paste"
-          android:padding="8dp"
-          android:textColor="@color/BackgroundColor"
-          android:onClick="pastFunc"
-          android:background="@color/colorPrimary"
-          android:id="@+id/pastebtn"/>
+
+          <Button
+              android:id="@+id/gobtn"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_margin="8dp"
+              android:layout_weight="1"
+              android:background="#fdf7005f"
+              android:onClick="goFunc"
+              android:padding="8dp"
+              android:text="@string/go"
+              android:textColor="@color/BackgroundColor" />
+
+          <Button
+              android:id="@+id/pastebtn"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_margin="8dp"
+              android:layout_weight="1"
+              android:background="#fdf7005f"
+              android:onClick="pastFunc"
+              android:padding="8dp"
+              android:text="Paste"
+              android:textColor="@color/BackgroundColor" />
       </LinearLayout>
       <TextView
           android:layout_width="wrap_content"
