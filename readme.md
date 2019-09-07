@@ -6,14 +6,10 @@ Harmonica is an open-source android application that translates music notes into
      height=500 width=230/>
 <img src="2.jpg"
      alt="Harmonica Application"
-      height=500 width=230/> 
-
-  <img src="3.jpg"
+      height=500 width=230/><img src="3.jpg"
+     alt="Harmonica Application"
+      height=500 width=230/> <img src="4.jpg"
      alt="Harmonica Application"
       height=500 width=230/>
-     
- <img src="4.jpg"
-     alt="Harmonica Application"
-      height=500 width=230/><BR>
    
 
