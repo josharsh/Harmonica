@@ -27,14 +27,14 @@ git clone https://github.com/josharsh/harmonica.git
 Harmonica is an open-source android application that translates music notes into harmonica numeric notations!
 <HR>
      <p>
-<img src="1.jpg"
+<img src="Resources/1.jpg"
      alt="Harmonica Application"
      height=420 width=190/>
-<img src="2.jpg"
+<img src="Resources/2.jpg"
      alt="Harmonica Application"
       height=420 width=190/>   <img src="Resources/3.jpg"
      alt="Harmonica Application"
-      height=420 width=190/>  <img src="4.jpg"
+      height=420 width=190/>  <img src="Resources/4.jpg"
      alt="Harmonica Application"
       height=420 width=190/>
    
