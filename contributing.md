@@ -12,5 +12,5 @@ Issues should be created to submit a change to the repository before opening a p
 ## Your First Contribution
 In case you have additions to the concepts, codebase, or anything relevant, You're most welcome to open an issue, followed by opening a pull request. You are again welcome to report a mistake in the existing content, and code obselete issues.
 
-##Know More about open Source Contributions:
+## Know More about open Source Contributions:
 Here are a couple of friendly tutorials you can go through: http://makeapullrequest.com/ and http://www.firsttimersonly.com/
