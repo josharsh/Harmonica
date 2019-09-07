@@ -1,17 +1,4 @@
-Harmonica is an open-source android application that translates music notes into harmonica numeric notations!
-<HR>
-     <p>
-<img src="1.jpg"
-     alt="Harmonica Application"
-     height=420 width=190/>
-<img src="2.jpg"
-     alt="Harmonica Application"
-      height=420 width=190/>   <img src="3.jpg"
-     alt="Harmonica Application"
-      height=420 width=190/>  <img src="4.jpg"
-     alt="Harmonica Application"
-      height=420 width=190/>
-   
+
 
 # Harp
 ## About
@@ -36,3 +23,18 @@ git clone https://github.com/josharsh/harmonica.git
 
 ### License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+Harmonica is an open-source android application that translates music notes into harmonica numeric notations!
+<HR>
+     <p>
+<img src="1.jpg"
+     alt="Harmonica Application"
+     height=420 width=190/>
+<img src="2.jpg"
+     alt="Harmonica Application"
+      height=420 width=190/>   <img src="3.jpg"
+     alt="Harmonica Application"
+      height=420 width=190/>  <img src="4.jpg"
+     alt="Harmonica Application"
+      height=420 width=190/>
+   
