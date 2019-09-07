@@ -3,7 +3,7 @@
 Read this space to know the contributing guidelines. Please follow the guidelines for smooth contribution. Following the guidelines reflect your courtesy towards the open source contribution. The issues, potential changes and pull requests will be addressed in compliance with the quality of need and urgency.
 
 ### Expected Contribution:
-In case you are willing to contribute in any form, You're most Welcome! Improvement in documentation, reporting bugs and mistakes is expected in general.
+In case you are willing to contribute in any form, You're most Welcome! Improvement in documentation, reporting bugs and mistakes is expected in general. You can also work on enhancing the feature of the application
 
 ## Getting started
 ### Ground Rules
