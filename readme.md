@@ -1,7 +1,8 @@
 Harmonica is an open-source android application that translates music notes into harmonica numeric notations!
+<HR>
+     <p>
 <img src="1.jpg"
      alt="Harmonica Application"
-     style="float: left; margin-right: 10px;"
      height=500 width=230/>
 <img src="2.jpg"
      alt="Harmonica Application"
