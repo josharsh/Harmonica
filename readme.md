@@ -3,7 +3,7 @@
 # Harp
 ## About
 
-An android application which converts sargam notations to standard numerical harmonica notations
+An android application which converts sargam notations to standard numerical harmonica notations. This is a basic level android project
 
 ### Language
 Java
