@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,121 +10,77 @@
     <!-- The primary full-screen view. This can be replaced with whatever view
          is needed to present your content, e.g. VideoView, SurfaceView,
          TextureView, etc. -->
-    <LinearLayout
 
-        android:gravity="center"
+    <android.support.constraint.ConstraintLayout
+
+        android:id="@+id/fullscreen_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/fullscreen_content"
-        android:orientation="vertical">
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <GridLayout
-        android:layout_gravity="center"
-        android:padding="20dp"
-        android:paddingBottom="100dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnCount="2"
-        >
-        <LinearLayout android:orientation="vertical"
-            android:padding="25dp">
-            <ImageButton
+
+        <!--<TextView
+            android:id="@+id/fullscreen_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:keepScreenOn="true"
+            android:text="@string/dummy_content"
+            android:textColor="#33b5e5"
+            android:textSize="50sp"
+            android:textStyle="bold" />-->
+
+        <!-- This FrameLayout insets its children based on system windows using
+             android:fitsSystemWindows. -->
+
+
+        <ImageButton
+            android:id="@+id/imageButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@null"
+            android:onClick="learn"
             android:src="@drawable/music"
-            android:onClick="learn"
-            android:background="@null"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:paddingLeft="18dp"
-            android:layout_height="wrap_content"
-            android:text="@string/learn"
-            android:textColor="#F44336"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:fontFamily="Roboto"
-            /></LinearLayout>
+            app:layout_constraintEnd_toStartOf="@+id/imageButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
 
-        <LinearLayout android:orientation="vertical"
-            android:padding="25dp">
-            <ImageButton
+        <ImageButton
+            android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@null"
+            android:onClick="learn"
             android:src="@drawable/play"
-            android:onClick="learn"
-            android:background="@null"
-            />
-            <TextView
-                android:layout_width="wrap_content"
-                android:paddingLeft="18dp"
-                android:layout_height="wrap_content"
-                android:text="@string/play"
-                android:textColor="#2196F3"
-                android:textSize="25sp"
-                android:textStyle="bold"
-                android:fontFamily="Roboto"
-                /></LinearLayout>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageButton2"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
 
-        <LinearLayout android:orientation="vertical"
-            android:padding="25dp"><ImageButton
+        <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/about"
-            android:onClick="learn"
             android:background="@null"
-            />
-            <TextView
-                android:layout_width="wrap_content"
-                android:paddingLeft="18dp"
-                android:layout_height="wrap_content"
-                android:text="@string/about"
-                android:textColor="#9C27B0"
-                android:textSize="25sp"
-                android:textStyle="bold"
-                android:fontFamily="Roboto"
-                /></LinearLayout>
-
-        <LinearLayout android:orientation="vertical"
-            android:padding="25dp">
-            <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/invite"
             android:onClick="sendInvite"
+            android:src="@drawable/invite"
+            app:layout_constraintBottom_toTopOf="@+id/textView8"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton"
+            app:layout_constraintStart_toStartOf="@+id/imageButton" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@null"
-            />
-            <TextView
-                android:layout_width="wrap_content"
-                android:paddingLeft="12dp"
-                android:paddingTop="5dp"
-                android:layout_height="wrap_content"
-                android:text="@string/invite"
-                android:textColor="#FFEEA3"
-                android:textSize="25sp"
-                android:textStyle="bold"
-                android:fontFamily="Roboto"
-                /></LinearLayout>
-
-    </GridLayout></LinearLayout>
-
-    <!--<TextView
-        android:id="@+id/fullscreen_content"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:keepScreenOn="true"
-        android:text="@string/dummy_content"
-        android:textColor="#33b5e5"
-        android:textSize="50sp"
-        android:textStyle="bold" />-->
-
-    <!-- This FrameLayout insets its children based on system windows using
-         android:fitsSystemWindows. -->
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fitsSystemWindows="true">
+            android:onClick="learn"
+            android:src="@drawable/about"
+            app:layout_constraintBottom_toTopOf="@+id/textView6"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+            app:layout_constraintStart_toStartOf="@+id/imageButton2" />
 
         <LinearLayout
             android:id="@+id/fullscreen_content_controls"
@@ -133,6 +90,7 @@
             android:layout_gravity="bottom|center_horizontal"
             android:background="@color/black_overlay"
             android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/fullscreen_content"
             tools:ignore="UselessParent">
 
             <Button
@@ -145,6 +103,80 @@
                 android:text="@string/dummy_button" />
 
         </LinearLayout>
-    </FrameLayout>
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="Roboto"
+            android:gravity="center"
+            android:text="@string/learn"
+            android:textColor="#F44336"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+            app:layout_constraintStart_toStartOf="@+id/imageButton2"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="Roboto"
+            android:gravity="center"
+            android:text="@string/about"
+            android:textColor="#9C27B0"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="Roboto"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="@string/invite"
+            android:textColor="#FFEEA3"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="@+id/textView7"
+            app:layout_constraintStart_toStartOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="Roboto"
+            android:gravity="center"
+            android:text="@string/play"
+            android:textColor="#2196F3"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton"
+            app:layout_constraintStart_toStartOf="@+id/imageButton"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
