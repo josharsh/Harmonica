@@ -16,6 +16,7 @@
         android:id="@+id/fullscreen_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#00FFFFFF"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -53,7 +54,7 @@
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@null"
+            android:background="#00FFFFFF"
             android:onClick="learn"
             android:src="@drawable/play"
             app:layout_constraintEnd_toEndOf="parent"
@@ -84,14 +85,12 @@
 
         <LinearLayout
             android:id="@+id/fullscreen_content_controls"
-            style="?metaButtonBarStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal"
-            android:background="@color/black_overlay"
+            android:background="#66000000"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="@+id/fullscreen_content"
-            tools:ignore="UselessParent">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
             <Button
                 android:id="@+id/dummy_button"
@@ -100,8 +99,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="showMain"
-                android:text="@string/dummy_button" />
-
+                android:text="@string/dummy_button"
+                android:visibility="visible"
+                tools:visibility="visible" />
         </LinearLayout>
 
         <TextView
