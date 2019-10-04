@@ -25,8 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void showOverview(View view){
-        Intent i= new Intent(MainActivity.this,FullscreenActivity.class);
-        startActivity(i);
+        finish();
     }
 
     private String inpuFunc() {

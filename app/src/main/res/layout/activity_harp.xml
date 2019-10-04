@@ -5,6 +5,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HarpActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/back_to_overview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:onClick="goBackActivity"
+            android:scaleType="fitCenter"
+            android:tint="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backarrow_filled_transparent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="@string/enter_notes_here"
+            android:textAlignment="center"
+            android:textColor="@color/TextOnDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/spacer"
+            app:layout_constraintStart_toEndOf="@+id/back_to_overview"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/spacer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
     <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"

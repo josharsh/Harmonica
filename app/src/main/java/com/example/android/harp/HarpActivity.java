@@ -3,12 +3,17 @@ package com.example.android.harp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class HarpActivity extends AppCompatActivity {
 
     public final static String MESSAGE_KEY = "M";
+
+    public void goBackActivity(View view){
+        finish();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
