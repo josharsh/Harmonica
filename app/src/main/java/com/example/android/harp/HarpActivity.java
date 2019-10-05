@@ -1,5 +1,8 @@
 package com.example.android.harp;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +16,17 @@ public class HarpActivity extends AppCompatActivity {
 
     public void goBackActivity(View view){
         finish();
+    }
+
+    public void copyToClipboard(View view){
+        TextView TV = findViewById(R.id.outputSecondView);
+        CharSequence output = TV.getText();
+        if (output == null){
+            return;
+        }
+        ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+        ClipData clip = ClipData.newPlainText("Numeric harmonica notation", output);
+        clipboard.setPrimaryClip(clip);
     }
 
     @Override
