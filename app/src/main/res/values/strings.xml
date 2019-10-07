@@ -8,6 +8,7 @@
     <string name="learn">LEARN</string>
     <string name="play">PLAY</string><string name="about">ABOUT</string>
     <string name="invite">INVITE</string>
+    <string name="note_conversion_here">Nummeric harmonica notation</string>
 
 
 </resources>

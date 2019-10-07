@@ -24,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void showOverview(View view){
+        finish();
+    }
+
     private String inpuFunc() {
         String N = String.valueOf(in.getText());
         return N;
