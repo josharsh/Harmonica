@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".PlayActivity"></activity>
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".HarpActivity" />
         <activity
             android:name=".FullscreenActivity"

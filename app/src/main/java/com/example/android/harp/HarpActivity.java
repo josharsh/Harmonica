@@ -14,6 +14,24 @@ public class HarpActivity extends AppCompatActivity {
 
     public final static String MESSAGE_KEY = "M";
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.activity_harp);
+        Intent intent = getIntent();
+        if (intent != null) {
+            String message = intent.getStringExtra(MESSAGE_KEY);
+            // Log.v("H0000higgggggg",message);
+            TextView Vi = findViewById(R.id.outputSecondView);
+            if (message != null && !message.isEmpty()) {
+                Toast.makeText(this, "HELLO", Toast.LENGTH_SHORT).show();
+            }
+            Vi.setText(message);
+        }
+
+    }
+
     public void goBackActivity(View view){
         finish();
     }
@@ -29,19 +47,5 @@ public class HarpActivity extends AppCompatActivity {
         clipboard.setPrimaryClip(clip);
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_harp);
-        Intent intent = getIntent();
-        String message = intent.getStringExtra(MESSAGE_KEY);
-        // Log.v("H0000higgggggg",message);
-        TextView Vi = findViewById(R.id.outputSecondView);
-        if (!message.equals("")) {
-            Toast.makeText(this, "HELLO", Toast.LENGTH_SHORT).show();
-        }
-        Vi.setText(message);
-
-    }
 }
