@@ -1,8 +1,13 @@
 <resources>
     <string name="app_name">Harp</string>
     <string name="enter_notes_here">Enter notes here</string>
+    <string name="nav_header_app_desc">A sargam to numerical notation converter</string>
     <string name="go">GO</string>
 
+    <string name="menu_about">ABOUT</string>
+    <string name="menu_contact">CONTACT</string>
+    <string name="open">Drawer open</string>
+    <string name="close">Drawer close</string>
 
     <string name="dummy_button">CONVERT</string>
     <string name="learn">LEARN</string>
