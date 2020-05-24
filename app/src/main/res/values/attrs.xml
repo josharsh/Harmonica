@@ -7,6 +7,10 @@
     <declare-styleable name="ButtonBarContainerTheme">
         <attr name="metaButtonBarStyle" format="reference" />
         <attr name="metaButtonBarButtonStyle" format="reference" />
-    </declare-styleable>
 
+        <attr name="colorOnPrimary" format="color" />
+        <attr name="colorNavigationItem" format="color" />
+        <attr name="colorNavigationItemPressed" format="color" />
+        <attr name="drawableNavigationItemBackground" format="reference" />
+    </declare-styleable>
 </resources>
